@@ -2,11 +2,24 @@
 
 A Microsoft Power Automate flow to synchronize two Outlook 365 calendars.
 
-Download the zip archieve from [here](https://github.com/MShekow/outlook-calendar-sync/raw/main/Outlook%20calendar%20sync%20v0.4.zip).
+Download the zip archieve from [here](https://github.com/MShekow/outlook-calendar-sync/raw/main/Outlook%20calendar%20sync%20v0.5.zip).
+
+If you want to get rid of all blocker events, you can use [this](https://github.com/MShekow/outlook-calendar-sync/raw/main/Delete%20SyncBlocker%20events.zip) helper PowerAuto flow.
 
 Please see [this blog post](https://www.augmentedmind.de/?p=2990) for details.
 
 ## Change log
+
+### v0.5 (2023-05-19)
+
+* Fix the displayed date of _all-day_ events be distorted
+  (see https://github.com/MShekow/outlook-calendar-sync/issues/2), by fixing
+  the "all day" event attribute
+* Fix the _sensitivity_ event attribute, so that _private_ events also
+  appear as _private_ for the blocker events
+* Improve synchronization stability by using the unique CalDAV ID (instead of
+  Outlook's internal event ID), and specifying an upper limit when querying for
+  events. This should reduce any accidental duplicated blocker events.
 
 ### v0.4 (2023-05-01)
 
