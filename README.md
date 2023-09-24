@@ -2,13 +2,22 @@
 
 A Microsoft Power Automate flow to synchronize two Outlook 365 calendars.
 
-Download the zip archieve from [here](https://github.com/MShekow/outlook-calendar-sync/raw/main/Outlook%20calendar%20sync%20v0.5.zip).
+Download the zip archieve from [here](https://github.com/MShekow/outlook-calendar-sync/raw/main/Outlook%20calendar%20sync%20v0.6.zip).
 
 If you want to get rid of all blocker events, you can use [this](https://github.com/MShekow/outlook-calendar-sync/raw/main/Delete%20SyncBlocker%20events.zip) helper PowerAuto flow.
 
 Please see [this blog post](https://www.augmentedmind.de/?p=2990) for details.
 
 ## Change log
+
+### v0.6 (2023-09-24)
+
+* Fix errors such as `InvalidTemplate. The execution of template action 'Cal1_SB_events_with_matching_location' failed [...] property 'iCalUId' doesn't exist [...]`
+  by filtering out events that do not have a `iCalUId` property for some reason
+* Add new setting **Hide event details in calendar 1/2**. If you set this to
+  `true`, the sync blocker event will not have the real subject and
+  body of the corresponding real calendar event, but a dummy text.
+  This is useful for privacy reasons.
 
 ### v0.5 (2023-05-19)
 
