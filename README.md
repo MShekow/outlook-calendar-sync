@@ -2,7 +2,7 @@
 
 A Microsoft Power Automate flow to synchronize two Outlook 365 calendars.
 
-Download the zip archive from [here](https://github.com/MShekow/outlook-calendar-sync/raw/main/Outlook%20calendar%20sync%20v0.7.zip).
+Download the zip archive from [here](https://github.com/MShekow/outlook-calendar-sync/raw/main/Outlook%20calendar%20sync%20v0.8.zip).
 
 If you want to get rid of all blocker events, you can use [this](https://github.com/MShekow/outlook-calendar-sync/raw/main/Delete%20SyncBlocker%20events.zip) helper PowerAuto flow.
 
