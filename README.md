@@ -10,6 +10,16 @@ Please see [this blog post](https://www.augmentedmind.de/?p=2990) for details.
 
 ## Change log
 
+### v0.8 (2024-01-05)
+
+* Add support for (optional) **uni-directional** synchronization, by adding
+  two new settings named **Synchronize from calendar X to calendar Y**
+  which you can set to `false` as desired (default is `true`)
+* Add new setting **Synchronize events without other attendees** (default is `true`).
+  Set this to `false` if you do not want to synchronize events that you created just
+  for yourself (e.g. reminders for a doctor's appointment), i.e., events that have
+  neither optional nor required attendees (other than yourself)
+
 ### v0.7 (2023-11-12)
 
 * Add new (optional) setting **Category for SyncBlocker events in calendar 1/2** which you
