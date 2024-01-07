@@ -8,6 +8,8 @@ If you want to get rid of all blocker events, you can use [this](https://github.
 
 Please see [this blog post](https://www.augmentedmind.de/?p=2990) for details.
 
+**Note: there is also a fork of this flow that synchronizes your Outlook <-> _Google_ calendar, see [here](https://github.com/MShekow/outlook-google-calendar-sync).**
+
 ## Change log
 
 ### v0.8 (2024-01-05)
