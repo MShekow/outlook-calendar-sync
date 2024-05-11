@@ -17,9 +17,9 @@ Please see [this blog post](https://www.augmentedmind.de/?p=2990) for details.
 
 
 > [!IMPORTANT]
-> v0.9 introduces **major** changes to the synchronization core logic. The main new feature is that the _location_ field is now synchronized. Please carefully read the points below for more details.
+> v0.9 introduces **major** changes to the synchronization core logic. The main new feature is that the _location_ field is now synchronized. However, running _multiple parallel_ flows (to synchronize more than two calendars) is _no longer supported_! Please carefully read the points below for more details.
 > 
-> As a consequence, the flow consumes a few more actions, and you might reach your daily quota/limit more quickly. If you don't have a strong need to synchronize the location field, you might want to stay on a previous version!
+> v0.9 of the flow also consumes a few more actions than v0.8, thus you might reach your daily quota/limit more quickly. If you don't have a strong need to synchronize the location field (or if you want to synchronize more than two calendars), you should stay on v0.8 or older!
 
 * **WARNING**: if you are upgrading from 0.8 or older, **you _must_ first run the _Delete SyncBlocker events_ flow** to delete all old SyncBlocker events (because they are incompatible with v0.9 and newer). You must run the _Delete SyncBlocker events_ flow once, for _every_ calendar that is affected by your v0.8 (or older) synchronization flow.
   * Note: the zip archive of the _Delete Syncblocker events_ flow has been updated, so that it can delete SyncBlocker events created with v0.9 or newer. Should you run into problems with v0.9 and want to revert to v0.8, make sure that you download the new version of the _Delete SyncBlocker events_ flow (and **re**-import it into Power Automate), to properly clean your SyncBlocker events.
